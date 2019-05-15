@@ -148,21 +148,28 @@ namespace CollectionManager.DataTypes
         public OsuGrade CatchGrade { get; set; }
         public OsuGrade ManiaGrade { get; set; }
 
-        public OsuGrade Grade
+        public string Grade
         {
             get
             {
+                OsuGrade grade;
                 switch (PlayMode) {
                     case PlayMode.OsuMania:
-                        return ManiaGrade;
+                        grade = ManiaGrade;
+                        break;
                     case PlayMode.Taiko:
-                        return TaikoGrade;
+                        grade = TaikoGrade;
+                        break;
                     case PlayMode.CatchTheBeat:
-                        return CatchGrade;
+                        grade = CatchGrade;
+                        break;
                     case PlayMode.Osu:
                     default:
-                        return OsuGrade;
+                        grade = OsuGrade;
+                        break;
                 }
+
+                return grade == OsuGrade.Null ? "" : grade.ToString();
             }
         }
 
