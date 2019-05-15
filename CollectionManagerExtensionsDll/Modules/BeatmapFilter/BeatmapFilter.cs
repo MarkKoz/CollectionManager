@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -29,7 +29,7 @@ namespace CollectionManagerExtensionsDll.Modules.BeatmapFilter
                 \. \d
             )
             \d*
-            (?: e [+-]? \d+ )?  
+            (?: e [+-]? \d+ )?
             $
         ");
 
@@ -124,7 +124,7 @@ namespace CollectionManagerExtensionsDll.Modules.BeatmapFilter
 
                         case "key":
                         case "keys":
-                            return delegate (Beatmap b) { return RetFalse(); };
+                            return delegate (Beatmap b) { return isPatternMatch(Math.Round((double)b.CircleSize, 1), op, num) && b.PlayMode == PlayMode.OsuMania; };
 
                         case "speed":
                             return delegate (Beatmap b) { return RetFalse(); };
