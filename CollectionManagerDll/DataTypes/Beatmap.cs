@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using CollectionManager.Enums;
 using CollectionManager.Modules.ModParser;
@@ -147,7 +147,25 @@ namespace CollectionManager.DataTypes
         public OsuGrade TaikoGrade { get; set; }
         public OsuGrade CatchGrade { get; set; }
         public OsuGrade ManiaGrade { get; set; }
-        
+
+        public OsuGrade Grade
+        {
+            get
+            {
+                switch (PlayMode) {
+                    case PlayMode.OsuMania:
+                        return ManiaGrade;
+                    case PlayMode.Taiko:
+                        return TaikoGrade;
+                    case PlayMode.CatchTheBeat:
+                        return CatchGrade;
+                    case PlayMode.Osu:
+                    default:
+                        return OsuGrade;
+                }
+            }
+        }
+
         public short Offset { get; set; }
         public float StackLeniency { get; set; }
         private PlayMode _playMode;
@@ -437,7 +455,7 @@ namespace CollectionManager.DataTypes
                 return false;
             if (ManiaGrade != b.ManiaGrade)
                 return false;
-            
+
 
             if (Offset != b.Offset)
                 return false;

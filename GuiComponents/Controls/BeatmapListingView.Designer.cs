@@ -64,9 +64,6 @@ namespace GuiComponents.Controls
             this.LastPlayed = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.olvColumn12 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.olvColumn13 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn6 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn7 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn8 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.olvColumn9 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.olvColumn11 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.BeatmapsContextMenuStrip.SuspendLayout();
@@ -244,9 +241,6 @@ namespace GuiComponents.Controls
             this.ListViewBeatmaps.AllColumns.Add(this.LastPlayed);
             this.ListViewBeatmaps.AllColumns.Add(this.olvColumn12);
             this.ListViewBeatmaps.AllColumns.Add(this.olvColumn13);
-            this.ListViewBeatmaps.AllColumns.Add(this.olvColumn6);
-            this.ListViewBeatmaps.AllColumns.Add(this.olvColumn7);
-            this.ListViewBeatmaps.AllColumns.Add(this.olvColumn8);
             this.ListViewBeatmaps.AllColumns.Add(this.olvColumn9);
             this.ListViewBeatmaps.AllColumns.Add(this.olvColumn11);
             this.ListViewBeatmaps.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
@@ -371,9 +365,9 @@ namespace GuiComponents.Controls
             //
             // olvColumn1
             //
-            this.olvColumn1.AspectName = "OsuGrade";
+            this.olvColumn1.AspectName = "Grade";
             this.olvColumn1.IsEditable = false;
-            this.olvColumn1.Text = "OsuGrade";
+            this.olvColumn1.Text = "Grade";
             //
             // LastPlayed
             //
@@ -392,27 +386,6 @@ namespace GuiComponents.Controls
             //
             this.olvColumn13.AspectName = "UserComment";
             this.olvColumn13.Text = "Comment";
-            //
-            // olvColumn6
-            //
-            this.olvColumn6.AspectName = "TaikoGrade";
-            this.olvColumn6.IsEditable = false;
-            this.olvColumn6.IsVisible = false;
-            this.olvColumn6.Text = "TaikoGrade";
-            //
-            // olvColumn7
-            //
-            this.olvColumn7.AspectName = "CatchGrade";
-            this.olvColumn7.IsEditable = false;
-            this.olvColumn7.IsVisible = false;
-            this.olvColumn7.Text = "CatchGrade";
-            //
-            // olvColumn8
-            //
-            this.olvColumn8.AspectName = "ManiaGrade";
-            this.olvColumn8.IsEditable = false;
-            this.olvColumn8.IsVisible = false;
-            this.olvColumn8.Text = "ManiaGrade";
             //
             // olvColumn9
             //
@@ -480,9 +453,6 @@ namespace GuiComponents.Controls
         private System.Windows.Forms.ToolStripMenuItem copyAsTextMenuStrip;
         private BrightIdeasSoftware.OLVColumn olvColumn13;
         private BrightIdeasSoftware.OLVColumn olvColumn1;
-        private BrightIdeasSoftware.OLVColumn olvColumn6;
-        private BrightIdeasSoftware.OLVColumn olvColumn7;
-        private BrightIdeasSoftware.OLVColumn olvColumn8;
         private System.Windows.Forms.ToolStripMenuItem PullMapsetMenuStrip;
         private BrightIdeasSoftware.OLVColumn olvColumn9;
         private BrightIdeasSoftware.OLVColumn olvColumn11;
