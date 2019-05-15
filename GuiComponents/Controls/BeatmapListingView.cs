@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -130,7 +130,7 @@ namespace GuiComponents.Controls
                 }
                 return null;
             };
-            
+
             column_ar.AspectGetter = rowObject =>
             {
                 if (rowObject is Beatmap beatmap)
